@@ -1,0 +1,206 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block stylesheets %}
+
+    {{ parent() }}
+
+    {{ encore_entry_link_tags('index') }}
+{% endblock %}
+
+{% block body %}
+
+    <div class="mockup">
+        <div class="ac-scroll"></div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-10 offset-lg-1">
+                <div class="row">
+                    <div class="col-sm-8 offset-sm-2 col-md-8 offset-md-2 col-lg-4 offset-lg-4 text-center">
+                        <h3 class="title">Le Salon</h3>
+                        <div class="inner">
+                            <div class="line_divider_border"></div>
+                            <div class="line_divider_seperator">
+                                <i class="glyphicon glyphicon-leaf"></i>
+                            </div>
+                            <div class="line_divider_border"></div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-8 offset-sm-2 col-md-8 offset-md-2 col-12 col-lg-6 offset-lg-3">
+                        <div class="wrapper_standart text-center">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-sm-8 col-lg-8">
+                        <div class="parallax-fixed parallax-one">
+                            <img src="{{ asset('assets/images/salon.jpg') }}">
+                        </div>
+                    </div>
+                    <div id="parallax-one" class="col-12 col-sm-6 offset-sm-6 col-lg-6 offset-lg-6 wrapper_parallax_move">
+                        <div class="parallax-move">
+                            <h3>Titre</h3>
+                            <p class="mt-20">Aliquip veniam delectus, Marfa eiusmod Pinterest dans faire swami readymade swag. Selfies iPhone Kickstarter, boire du vinaigre de jean vinaigre stumptown yr pop-up artisan sunt. Bière artisanale élit seitan exercice, photomaton.</p>
+                            <p><a href="#">Découvrez-nous</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 wrapper_parallax_move_back">
+                <div class="parallax_move_back">
+                    <div id="parallax-move-back-one">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-sm-10 offset-sm-1 col-md-10 offset-md-1 col-lg-10 offset-lg-1">
+                <div class="row">
+                    <div class="col-lg-4 offset-lg-4 text-center">
+                        <h3 class="title">Les Services</h3>
+                        <div class="inner">
+                            <div class="line_divider_border"></div>
+                            <div class="line_divider_seperator">
+                                <i class="glyphicon glyphicon-leaf"></i>
+                            </div>
+                            <div class="line_divider_border"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="img_boxed_wrapper">
+                            <img src="{{ asset('assets/images/homme.jpg') }}">
+                            <div class="img_boxed_content">
+                                <h3>Coupe Homme</h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                    tempor incididunt ut labore et dolore magna aliqua.
+                                </p>
+                                <p>
+                                    <a data-toggle="modal" data-target="#coupeHomme">
+                                        Voir les prix
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="img_boxed_wrapper">
+                            <img src="{{ asset('assets/images/femme.jpg') }}">
+                            <div class="img_boxed_content">
+                                <h3>Coupe Femme</h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                    tempor incididunt ut labore et dolore magna aliqua.
+                                </p>
+                                <p>
+                                    <a data-toggle="modal" data-target="#coupeFemme">
+                                        Voir les prix
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="img_boxed_wrapper">
+                            <img src="{{ asset('assets/images/enfant.jpg') }}">
+                            <div class="img_boxed_content">
+                                <h3>Coupe Enfant</h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                    tempor incididunt ut labore et dolore magna aliqua.
+                                </p>
+                                <p>
+                                    <a data-toggle="modal" data-target="#coupeEnfant">
+                                        Voir les prix
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 wrapper_parallax_move_back">
+                <div class="parallax_move_back">
+                    <div id="parallax-move-back-two">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-sm-10 offset-sm-1 col-md-10 offset-md-1 col-lg-10 offset-lg-1">
+                <div class="row">
+                    <div class="col-lg-4 offset-lg-4 text-center">
+                        <h3 class="title">Moi</h3>
+                        <div class="inner">
+                            <div class="line_divider_border"></div>
+                            <div class="line_divider_seperator">
+                                <i class="glyphicon glyphicon-leaf"></i>
+                            </div>
+                            <div class="line_divider_border"></div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-6 offset-lg-3">
+                        <div class="wrapper_standart text-center">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div id="parallax-two" class="col-12 col-lg-6 wrapper_parallax_move">
+                        <div class="parallax-move">
+                            <h3>Titre</h3>
+                            <p class="mt-20">Aliquip veniam delectus, Marfa eiusmod Pinterest dans faire swami readymade swag. Selfies iPhone Kickstarter, boire du vinaigre de jean vinaigre stumptown yr pop-up artisan sunt. Bière artisanale élit seitan exercice, photomaton.</p>
+                            <p><a href="#">Découvrez-nous</a></p>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 offset-lg-4">
+                        <div class="parallax-fixed parallax-one">
+                            <img src="{{ asset('assets/images/moi.jpg') }}">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {% include 'FrontEnd/index/modals/modal_coupe_homme.html.twig' %}
+    {% include 'FrontEnd/index/modals/modal_coupe_femme.html.twig' %}
+    {% include 'FrontEnd/index/modals/modal_coupe_enfant.html.twig' %}
+
+{% endblock %}
+
+{% block javascripts %}
+
+  {{ parent() }}
+
+  {{ encore_entry_script_tags('index') }}
+{% endblock %}

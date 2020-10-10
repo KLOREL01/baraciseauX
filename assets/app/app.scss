@@ -1,0 +1,90 @@
+/*FONTS*/
+@import '../shared/libs/bootstrap/bootstrap.min.css';
+@import '../shared/libs/bootstrap/bootstrap-grid.min.css';
+
+@import "../shared/fonts/Montserrat/Montserrat.css";
+@import "../shared/fonts/atomyc/atomyc.css";
+/*FIN FONTS*/
+/*ANIMATIONS*/
+@-webkit-keyframes scroll {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(23px);
+    transform: translateY(23px);
+  }
+}
+
+@keyframes scroll {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(23px);
+    transform: translateY(23px);
+  }
+}
+.ac-scroll,
+.ac-scroll:before {
+  position: absolute;
+  left: 50%;
+}
+.ac-scroll {
+  width: 20px;
+  height: 35px;
+  margin-left: -10px;
+  position: absolute;
+  bottom: 20px;
+  margin-top: -35px;
+  box-shadow: inset 0 0 0 3px #fff;
+  border-radius: 25px;
+  z-index: 99;
+}
+.ac-scroll:before {
+  content: '';
+  width: 4px;
+  height: 4px;
+  background: #fff;
+  margin-left: -2px;
+  top: 4px;
+  border-radius: 4px;
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-name: scroll;
+  animation-name: scroll;
+}
+/*FIN ANIMATIONS*/
+/*GENERAL*/
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Rubik', sans-serif;
+  margin: 0;
+}
+a,
+a:hover,
+a:focus,
+a:active {
+  color: inherit;
+  text-decoration: none;
+}
+.mt-20 {
+  margin-top: 20px;
+}
+.pb-10 {
+  padding-bottom: 10%;
+}
+/*FIN GENERAL*/

@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "sourceMap": true,
+    // allow sourcemap support
+    "module": "es2015",
+    // specify module code generation
+    "moduleResolution": "node",
+    "jsx": "react",
+    // use typescript to transpile jsx to js
+    "target": "es5",
+    // specify ECMAScript target version
+    "allowJs": true,
+    // allow a partial TypeScript and JavaScript codebase
+    "allowSyntheticDefaultImports": true,
+    // emit 'use strict' on all JS files
+    "alwaysStrict": true,
+    "lib": ["es2015", "dom"]
+  },
+  "exclude": [
+    "assets/libs",
+    "node_modules",
+    "vendor",
+    "src",
+    "public"
+  ],
+  "include": [
+    "assets/app/*.ts",
+    "assets/app/**/*.ts"
+  ]
+}

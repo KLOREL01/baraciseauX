@@ -1,0 +1,304 @@
+/*HOME*/
+.mockup {
+  position: relative;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-image: url('../../shared/img/bg-logo.png');
+  background-size: cover;
+  background-position: center center;
+  color: #fff;
+  text-align: center;
+}
+.mockup h2 {
+  position: absolute;
+  top: 45%;
+  left: calc(50% - 95px);
+  width: 190px;
+}
+.mockup p {
+  position: absolute;
+  top: 50%;
+  left: calc(50% - 95px);
+}
+.mockup a {
+  position: absolute;
+  top: 55%;
+  left: calc(50% - 95px);
+  width: 190px;
+}
+.wrapper_standart {
+  text-align: left;
+  padding: 20px 0 60px;
+  margin-bottom: 2%;
+}
+.wrapper_standart h3 {
+  line-height: 1.5;
+  letter-spacing: -1px;
+}
+.wrapper_standart .p-title {
+  padding: 10px 0 20px;
+  font-weight: 600;
+  font-size: 16px;
+}
+.wrapper_standart p:last-child {
+  color: #666;
+}
+.parallax-fixed img {
+  border-radius: 3px;
+}
+.parallax-one img {
+  width: 100%;
+  margin-bottom: 60px;
+}
+.wrapper_parallax_move {
+  position: absolute;
+  z-index: 1;
+}
+.parallax-move {
+  padding: 40px;
+  bottom: 0;
+  border-radius: 3px;
+  background-color: #FFF;
+  -webkit-box-shadow: 0 22px 40px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0 22px 40px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 22px 40px rgba(0, 0, 0, 0.15);
+}
+
+.wrapper_parallax_move_back {
+  background-attachment: scroll;
+  height: 50vh;
+  padding: 0;
+  margin-bottom: 20px;
+
+}
+.parallax_move_back {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  pointer-events: none;
+  visibility: hidden;
+  z-index: 0;
+  clip: rect(0, 100vw, 50vh, 0);
+}
+#parallax-move-back-one {
+  background-position: 50% 50%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-image: url('../../shared/img/1_01.png');
+  height: 100%;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 1423px;
+  height: 100vh;
+  overflow: hidden;
+  pointer-events: none;
+  margin-left: 0px;
+  margin-top: 75vh;
+  visibility: visible;
+}
+#parallax-move-back-two {
+  background-position: 50% 50%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-image: url('../../shared/img/1_02.png');
+  height: 100%;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 1423px;
+  height: 100vh;
+  overflow: hidden;
+  pointer-events: none;
+  margin-left: 0px;
+  margin-top: 65vh;
+  visibility: visible;
+}
+.inner {
+  margin-bottom: 40px;
+}
+.line_divider_border {
+  width: 100px;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  border-top: 1px solid #e1e1e1;
+}
+.line_divider_seperator {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 15px;
+  margin: 0 10px;
+  color: #efa697;
+}
+.title {
+  padding: 40px 0;
+}
+.boxed_back_img {
+  position: relative;
+  width: 100%;
+  height: 330px;
+  margin-bottom: 60px;
+  overflow: hidden;
+  border-radius: 3px;
+}
+.boxed_back_img .content_overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.boxed_back_img [class^="back_img_"] {
+  background-size: cover;
+  background-position: center center;
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 330px;
+  border-radius: 3px;
+  z-index: 0;
+  transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+}
+.boxed_back_img:hover [class^="back_img_"] {
+  transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+/*.boxed_back_img .back_img_one {
+  background-image: url('../../img/RCDORAD_00159_conversion.jpg');
+}
+.boxed_back_img .back_img_two {
+  background-image: url('../../img/beauty.jpg');
+}
+.boxed_back_img .back_img_three {
+  background-image: url('../../img/relaxation.jpg');
+}*/
+
+.img_boxed_wrapper {
+  font-family: 'Rubik', sans-serif;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
+  padding: 0;
+  margin-bottom: 50px;
+  border-bottom: 3px solid #fff;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+  text-align: center;
+}
+
+.img_boxed_wrapper img {
+  max-width: 100%;
+  -webkit-border-top-left-radius: 3px;
+  -webkit-border-top-right-radius: 3px;
+  -moz-border-radius-topleft: 3px;
+  -moz-border-radius-topright: 3px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+.img_boxed_content {
+  padding: 30px;
+}
+.img_boxed_content h3 {
+  font-size: 24px;
+  line-height: 1.5em;
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: -1px;
+}
+.img_boxed_content p {
+  font-size: 14px;
+  line-height: 1.8;
+  color: #666;
+  padding-top: 0.7em;
+  padding-bottom: 1.3em;
+}
+.img_boxed_content p a {
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  display: inline-block;
+  border-bottom: 1px solid #222;
+  cursor: pointer;
+}
+
+@media (max-width: 767px) {
+  .wrapper_standart {
+    padding: 10px 0 30px;
+  }
+  .wrapper_parallax_move {
+    position: relative;
+  }
+  #parallax-move-back-one {
+    width: 864px;
+    height: 480px;
+    margin-left: -200px;
+  }
+}
+
+/*FIN HOME*/
+/*Modal*/
+.modal-content {
+  border-radius: 3px;
+  text-align: center;
+}
+.modal-header {
+  flex-wrap: wrap;
+  border-bottom: none;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+.modal-header .modal-title {
+  width: 100%;
+  font-size: 2rem;
+}
+.modal-header .inner {
+  width: 100%;
+  margin: 0;
+}
+.modal-header .line_divider_border {
+  width: 50px;
+}
+.modal-header button {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-weight: lighter;
+}
+.modal-body {
+  padding: 15px 30px;
+}
+.modal-body .wrapper_price {
+  float: left;
+  width: 100%;
+  clear: both;
+  border-bottom: 1px dashed #dce0e0;
+  padding: 15px 0 15px 0;
+  margin-bottom: 15px;
+  text-align: left;
+}
+.modal-body .wrapper_price .price_name {
+  font-size: 16px;
+  float: left;
+}
+.modal-body .wrapper_price .price_price {
+  font-size: 16px;
+  float: right;
+  font-weight: 500;
+}
+
+
+/*Fin Modal*/

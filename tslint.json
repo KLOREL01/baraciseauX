@@ -1,0 +1,43 @@
+{
+  "linterOptions": {
+    "exclude": [
+      "node_modules/**",
+      "assets/shared/libs/**",
+    ]
+  },
+  "rules": {
+    "no-any": false,
+    "curly": true,
+    "class-name": true,
+    "variable-name": [
+      true,
+      "check-format",
+      "allow-leading-underscore",
+      "ban-keywords"
+    ],
+    "only-arrow-functions": true,
+    "member-access": [
+      true,
+      "check-constructor",
+      "check-parameter-property"
+    ],
+    "typedef": [
+      true,
+      "call-signature",
+      "arrow-call-signature",
+      "parameter",
+      "arrow-parameter",
+      "property-declaration",
+      "variable-declaration",
+      "member-variable-declaration",
+      "object-destructuring",
+      "array-destructuring"
+    ],
+    "no-empty-interface": true,
+    "no-duplicate-switch-case": true,
+    "no-invalid-template-strings": true,
+    "switch-default": true,
+    "no-duplicate-imports": true,
+    "prefer-const": true
+  }
+}
