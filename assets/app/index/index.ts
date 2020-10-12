@@ -27,7 +27,10 @@ class Index {
   private _parallaxMove(): void {
     if (this._width <= 576) {
       this._scrollTop = this._window.scrollY;
-      this._parallaxMove1.style.bottom = 300 + this._scrollTop * .3 + 'px';
+      this._parallaxMove1.style.bottom = -100 + this._scrollTop * .1 + 'px';
+      this._parallaxMoveBack1.style.top = 600 - this._scrollTop * .6 + 'px';
+      this._parallaxMoveBack2.style.top = 900 - this._scrollTop * .27 + 'px';
+      this._parallaxMove2.style.bottom = -800 + this._scrollTop * .15 + 'px';
     } else if (this._width <= 768) {
       this._scrollTop = this._window.scrollY;
       this._parallaxMove1.style.bottom = 300 + this._scrollTop * .3 + 'px';
