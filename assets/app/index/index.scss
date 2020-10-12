@@ -173,16 +173,6 @@
   -webkit-transform: scale(1.1);
   -o-transform: scale(1.1);
 }
-/*.boxed_back_img .back_img_one {
-  background-image: url('../../img/RCDORAD_00159_conversion.jpg');
-}
-.boxed_back_img .back_img_two {
-  background-image: url('../../img/beauty.jpg');
-}
-.boxed_back_img .back_img_three {
-  background-image: url('../../img/relaxation.jpg');
-}*/
-
 .img_boxed_wrapper {
   font-family: 'Rubik', sans-serif;
   border-radius: 3px;
@@ -197,7 +187,6 @@
   transition: all 0.5s;
   text-align: center;
 }
-
 .img_boxed_wrapper img {
   max-width: 100%;
   -webkit-border-top-left-radius: 3px;
@@ -207,7 +196,6 @@
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
 }
-
 .img_boxed_content {
   padding: 30px;
 }
@@ -248,7 +236,6 @@
     margin-left: -200px;
   }
 }
-
 /*FIN HOME*/
 /*Modal*/
 .modal-content {
@@ -299,6 +286,4 @@
   float: right;
   font-weight: 500;
 }
-
-
 /*Fin Modal*/
