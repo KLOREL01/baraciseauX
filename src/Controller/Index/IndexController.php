@@ -15,7 +15,7 @@ class IndexController extends AbstractController
     public function index()
     {
         $var = array(
-            'title' => 'Bar à ciseaux'
+            'title' => 'Bar à ciseaux | Home'
         );
 
         return $this->render('FrontEnd/index/index.html.twig', $var);
