@@ -11,6 +11,8 @@
 
 {% block body %}
 
+    {% include 'FrontEnd/components/header.html.twig' %}
+
     <div class="mockup">
         <div class="ac-scroll"></div>
     </div>
@@ -82,7 +84,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-lg-4">
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-4">
                         <div class="img_boxed_wrapper">
                             <img src="{{ asset('assets/images/homme.jpg') }}">
                             <div class="img_boxed_content">
@@ -99,7 +101,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-4">
                         <div class="img_boxed_wrapper">
                             <img src="{{ asset('assets/images/femme.jpg') }}">
                             <div class="img_boxed_content">
@@ -116,7 +118,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-12 col-sm-6 offset-sm-3 col-md-6 offset-md-3 col-lg-4 offset-lg-0">
                         <div class="img_boxed_wrapper">
                             <img src="{{ asset('assets/images/enfant.jpg') }}">
                             <div class="img_boxed_content">

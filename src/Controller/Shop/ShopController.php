@@ -3,6 +3,7 @@
 namespace App\Controller\Shop;
 
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
 class ShopController extends AbstractController
@@ -10,7 +11,7 @@ class ShopController extends AbstractController
     /**
      * @Route("/shop", name="app_shop")
      *
-     * @return \Symfony\Component\HttpFoundation\Response
+     * @return Response
      */
     public function shop()
     {
