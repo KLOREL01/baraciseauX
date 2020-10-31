@@ -29,7 +29,7 @@ class Index {
 
       this._scrollTop = this._window.scrollY;
       this._parallaxMove1.style.bottom = -120 + this._scrollTop * .1 + 'px';
-      this._parallaxMoveBack1.style.top = 600 - this._scrollTop * .6 + 'px';
+      this._parallaxMoveBack1.style.top = 470 - this._scrollTop * .5 + 'px';
       this._parallaxMoveBack2.style.top = 1000 - this._scrollTop * .3 + 'px';
       this._parallaxMove2.style.bottom = -800 + this._scrollTop * .15 + 'px';
 
