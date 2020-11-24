@@ -1,0 +1,50 @@
+{% extends 'BackEnd/base_admin.html.twig' %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block stylesheets %}
+
+    {{ parent() }}
+
+    {{ encore_entry_link_tags('login') }}
+{% endblock %}
+
+{% block body %}
+
+    <div class="w-login">
+        <div class="w-logo">
+            <a href="#"><i class="ac-logo"></i><i class="ac-atomyc"></i></a>
+        </div>
+        <div class="w-body">
+            <div class="w-login-wrapper">
+                <div class="w-login-container">
+                    <div class="w-title">
+                        <h3>Se connecter</h3>
+                        <p id="sub-message"></p>
+                    </div>
+                    <form method="POST" action="{{ path('admin_login') }}" id="form-login" class="w-form" autocomplete="off">
+                        <div class="w-form-group">
+                            <input class="w-form-control" type="email" name="mail" placeholder="E-mail" required>
+                        </div>
+                        <div class="w-form-group">
+                            <input class="w-form-control" type="password" name="password" placeholder="Mot de passe" required>
+                            <input type="hidden" name="platform" value="navigateur">
+                        </div>
+                        <div class="w-form-actions">
+                            <a href="#" class="w-link">Mot de passe oublié ?</a>
+                            <button type="submit" class="btn btn-elevate w-btn">Se connecter</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
+
+{% block javascripts %}
+
+    {{ parent() }}
+
+    {{ encore_entry_script_tags('login') }}
+{% endblock %}

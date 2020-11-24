@@ -6,6 +6,18 @@ Encore
 
   .addEntry('index', './assets/app/index/index.ts')
 
+  // Admin
+
+  .addEntry('admin', './assets/admin/admin.ts')
+
+  .addEntry('login', './assets/admin/login/login.ts')
+
+  .addEntry('dashboard', './assets/admin/dashboard/dashboard.ts')
+
+  // Admin components
+
+  .addEntry('header_admin', './assets/admin/components/header.ts')
+
   .splitEntryChunks()
 
   .enableSingleRuntimeChunk()

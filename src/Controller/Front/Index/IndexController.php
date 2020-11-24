@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Controller\Index;
+namespace App\Controller\Front\Index;
 
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;

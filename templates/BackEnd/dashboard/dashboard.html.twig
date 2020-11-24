@@ -1,0 +1,35 @@
+{% extends 'BackEnd/base_admin.html.twig' %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block stylesheets %}
+
+    {{ parent() }}
+
+    {{ encore_entry_link_tags('dashboard') }}
+    {{ encore_entry_link_tags('header_admin') }}
+{% endblock %}
+
+{% block body %}
+
+    {% include 'BackEnd/components/header.html.twig' %}
+
+    <div class="w-container">
+        <div class="w-grid">
+            <div class="w-content">
+                <div class="w-content-body">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
+
+{% block javascripts %}
+
+    {{ parent() }}
+
+    {{ encore_entry_script_tags('dashboard') }}
+    {{ encore_entry_script_tags('header_admin') }}
+{% endblock %}
