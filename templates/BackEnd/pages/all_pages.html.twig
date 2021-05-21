@@ -18,17 +18,15 @@
         <div class="w-grid">
             <div class="w-content">
                 <div class="w-content-body">
-                    <div class="w-subheader">
-                        <div class="container-fluid d-flex align-items-center justify-content-between flex-wrap flex-sm-nowrap">
-                            <div class="d-flex align-items-center flex-wrap mr-1">
-                                <div class="d-flex align-items-baseline flex-wrap mr-5">
-                                    <h5 class="text-dark font-weight-bold my-1 mr-5">Dashboard</h5>
-                                </div>
+                    <div class="w-subheader d-flex align-items-center justify-content-between flex-wrap flex-sm-nowrap">
+                        <div class="d-flex align-items-center flex-wrap mr-1">
+                            <div class="d-flex align-items-baseline flex-wrap mr-5">
+                                <h5 class="text-dark font-weight-bold my-1 mr-5">Toutes les pages</h5>
                             </div>
-                            <div class="d-flex align-items-center flex-wrap"></div>
                         </div>
+                        <div class="d-flex align-items-center flex-wrap"></div>
                     </div>
-
+                    {% include 'BackEnd/components/card_table.html.twig' with { 'head': head, 'rows': rows, 'columns': columns } %}
                 </div>
             </div>
         </div>

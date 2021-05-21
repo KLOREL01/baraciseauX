@@ -1,0 +1,45 @@
+<div class="w-card">
+    <div class="w-card-header">
+        <div class="w-card-header-label">
+            <div class="w-card-title">
+                <h3></h3>
+            </div>
+        </div>
+    </div>
+    <div class="w-card-body">
+        <div class="w-wrapper-table">
+            <table>
+                <thead>
+                    <tr>
+                        {% for i in head %}
+                            <th>{{ i }}</th>
+                        {% endfor %}
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for row in rows %}
+                        <tr>
+                            {% for column in columns %}
+                                {% if attribute(row, column) is defined %}
+                                    <td>{{ attribute(row, column) }}</td>
+                                {% endif %}
+                            {% endfor %}
+                            <td class="btn-action">
+                                <a class="btn" href="{{ path('admin_modifier_page', {'id': row.id }) }}">
+                                    <i class="text-inverse glyphicon glyphicon-pencil"></i>
+                                </a>
+                                <form method="post" action="">
+                                    <input type="hidden" value="{{ row.id }}">
+                                    <button type="submit" class="btn">
+                                        <i class="text-danger glyphicon glyphicon-remove"></i>
+                                    </button>
+                                </form>
+                            </td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

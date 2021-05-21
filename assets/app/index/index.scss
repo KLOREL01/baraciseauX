@@ -137,6 +137,18 @@
   font-size: 15px;
   margin: 0 10px;
   color: #efa697;
+  span {
+    transform: rotate(337deg);
+    display: block;
+    i {
+      background: url('../../shared/img/ciseaux.svg');
+      background-size: cover;
+      transform: scaleX(-1);
+      height: 40px;
+      width: 58px;
+      display: block;
+    }
+  }
 }
 .title {
   padding: 40px 0;

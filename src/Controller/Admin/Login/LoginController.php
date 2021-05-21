@@ -15,11 +15,11 @@ use Symfony\Component\Serializer\Encoder\JsonDecode;
 class LoginController extends AbstractController
 {
     /** @var SessionInterface $session */
-    private $session;
+    private $_session;
 
     public function __construct(SessionInterface $session)
     {
-        $this->session = $session;
+        $this->_session = $session;
     }
 
     /**
@@ -66,7 +66,7 @@ class LoginController extends AbstractController
 
         if (!is_null($user))
         {
-            $this->session->set('user', $user);
+            $this->_session->set('user', $user);
             return new JsonResponse(['status' => true, 'message' => 'It\'s OK'], 200);
         }
         else

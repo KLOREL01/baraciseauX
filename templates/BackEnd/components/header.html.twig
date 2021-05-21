@@ -11,31 +11,28 @@
             </div>
         </div>
         <div class="w-aside-wrapper">
-            <button class="w-aside-close">
-                <i class="la la-close"></i>
-            </button>
             <div class="w-menu">
                 <ul class="w-menu-nav">
                     <li class="w-menu-item">
-                        <a class="w-item" href="/admin/dashboard">
-                            <i class="w-icon-link ac-meter"></i>
+                        <a class="w-item" href="{{ path('admin_dashboard') }}">
+                            <i class="w-icon-link ac-stack"></i>
                             <span>Dashboard</span>
                         </a>
                     </li>
                     <li class="w-menu-item expanded">
                         <a class="w-item w-item-toggle">
-                            <i class="w-icon-link ac-calendar"></i>
-                            <span>Pointage</span>
+                            <i class="w-icon-link ac-files-empty"></i>
+                            <span>Pages</span>
                             <i class="w-icon-arrow la la-angle-right"></i>
                         </a>
                         <div class="w-submenu">
                             <ul class="w-subnav">
                                 <li class="w-menu-item">
-                                    <a class="w-item" href="">
+                                    <a class="w-item" href="{{ path('admin_all_pages') }}">
                                         <i class="w-icon-bullet">
                                             <span></span>
                                         </i>
-                                        <span class="w-text">test</span>
+                                        <span class="w-text">Toutes les Pages</span>
                                     </a>
                                 </li>
                             </ul>
@@ -67,10 +64,6 @@
                 <i class="la la-ellipsis-h"></i>
             </button>
         </div>
-    </div>
-
-    <div class="w-aside-overlay off">
-
     </div>
 </div>
 <div class="w-header-desktop"></div>

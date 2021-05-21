@@ -74,7 +74,7 @@
     top: 0;
     bottom: 0;
     left: 0;
-    z-index: 9;
+    z-index: 99;
     &.w-aside-on {
       left: 0!important;
     }
@@ -427,6 +427,17 @@
     justify-content: center;
     .btn {
       margin-right: 1rem;
+    }
+  }
+}
+
+.w-aside-minimize {
+  .w-aside-footer {
+    .btn:first-child {
+      margin: auto;
+    }
+    .btn:nth-child(+n+2) {
+      display: none;
     }
   }
 }

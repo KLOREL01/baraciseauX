@@ -10,11 +10,11 @@ use Symfony\Component\Routing\Annotation\Route;
 class DashboardController extends AbstractController
 {
     /** @var SessionInterface $session */
-    private $session;
+    private $_session;
 
     public function __construct(SessionInterface $session)
     {
-        $this->session = $session;
+        $this->_session = $session;
     }
 
     /**
@@ -26,7 +26,7 @@ class DashboardController extends AbstractController
      */
     public function dashboard(string $title)
     {
-        if (is_null($this->session->get('user')))
+        if (is_null($this->_session->get('user')))
         {
             return $this->redirectToRoute('admin_login');
         }

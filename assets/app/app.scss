@@ -92,7 +92,23 @@ a:active {
 /* Header */
 header {
   position: fixed;
+  width: 100%;
+  background-color: #ffffff;
+  z-index: 9999;
+  border-bottom: 1px solid #ac811f;
+  .logo {
+    background: url('../shared/img/ciseaux.svg');
+    background-size: cover;
+    transform: scaleX(-1);
+    height: 50px;
+    width: 74px;
+    display: block;
+  }
+  .navbar-right {
+    flex-direction: row-reverse;
+  }
 }
+
 /* Fin Header */
 /* Footer */
 footer {

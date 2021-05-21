@@ -3,3 +3,6 @@ twig:
     debug: '%kernel.debug%'
     strict_variables: '%kernel.debug%'
     exception_controller: null
+    globals:
+        GLOBAL_HOST_SCHEME: '%env(GLOBAL_HOST_SCHEME)%'
+        GLOBAL_HOST_NAME: '%env(GLOBAL_HOST_NAME)%'

@@ -1,0 +1,164 @@
+{% extends 'BackEnd/base_admin.html.twig' %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block stylesheets %}
+
+    {{ parent() }}
+
+    {{ encore_entry_link_tags('dashboard') }}
+    {{ encore_entry_link_tags('header_admin') }}
+{% endblock %}
+
+{% block body %}
+
+    {% include 'BackEnd/components/header.html.twig' %}
+
+    <div class="w-container">
+        <div class="w-grid">
+            <div class="w-content">
+                <div class="w-content-body">
+                    <div class="w-subheader d-flex align-items-center justify-content-between flex-wrap flex-sm-nowrap">
+                        <div class="d-flex align-items-center flex-wrap mr-1">
+                            <div class="d-flex align-items-baseline flex-wrap mr-5">
+                                <h5 class="text-dark font-weight-bold my-1 mr-5">Modification de la page</h5>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center flex-wrap"></div>
+                    </div>
+
+                    <div class="w-box">
+                        <form method="post">
+                            <ul class="nav nav-tabs tabs customtab">
+                                <li class="tab">
+                                    <a href="#essentiel" data-toggle="tab" aria-expanded="true" class="active show">Essentiel</a>
+                                </li>
+                                <li class="tab">
+                                    <a href="#seo" data-toggle="tab" aria-expanded="false">Référencement - SEO</a>
+                                </li>
+                            </ul>
+                            <div class="tab-content">
+                                <div class="tab-pane active show" id="essentiel">
+                                    <div class="form-horizontal">
+
+                                        <div class="form-group">
+                                            <label for="text1" class="col-sm-12">Text 1</label>
+                                            <div class="col-sm-12">
+                                                <textarea type="text" name="text1" id="text1" class="form-control" placeholder="Text 1"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="text2" class="col-sm-12">Text 2</label>
+                                            <div class="col-sm-12">
+                                                <textarea type="text" name="text2" id="text2" class="form-control" placeholder="Text 1"></textarea>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="text3" class="col-sm-12">Text 3</label>
+                                            <div class="col-sm-12">
+												<textarea type="text" name="text3" id="text3" class="form-control" placeholder="Text 3"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane" id="seo">
+                                    <div class="form-horizontal">
+
+                                        <div class="form-group">
+                                            <label for="title" class="col-sm-12">Titre</label>
+                                            <div class="col-sm-12">
+                                                <input type="text" class="form-control" name="title" id="title" placeholder="Titre" maxlength="60" value="">
+                                                <span class="help-block">Reste <b id="title-count" class="help-info">60</b> caractères.</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="basic-url" class="col-sm-12">Url</label>
+                                            <div class="input-group col-sm-12">
+                                                <span class="input-group-addon">{{ GLOBAL_HOST_SCHEME }}://{{ GLOBAL_HOST_NAME }}</span>
+                                                <input type="text" class="form-control" name="url" id="basic-url" placeholder="/test" value="">
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="keywords" class="col-sm-12">Keywords</label>
+                                            <div class="col-sm-12">
+                                                <input type="text" name="keywords" id="keywords" class="form-control" placeholder="Keywords" value="">
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="description" class="col-sm-12">Description</label>
+                                            <div class="col-sm-12">
+                                                <input type="text" name="description" id="description" class="form-control" placeholder="Description" maxlength="150" value="">
+                                                <span class="help-block">Reste <b id="desc-count" class="help-info">150</b> caractères.</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label class="col-sm-12">Méta Robots index</label>
+                                            <div class="radio-list col-sm-12">
+                                                <label class="radio-inline">
+                                                    <div class="radio radio-info">
+                                                        <input type="radio" name="metaIndex" id="index" value="index">
+                                                        <label for="index">
+                                                            index
+                                                        </label>
+                                                    </div>
+                                                </label>
+                                                <label class="radio-inline">
+                                                    <div class="radio radio-info">
+                                                        <input type="radio" name="metaIndex" id="noindex" value="noindex" checked="">
+                                                        <label for="noindex">
+                                                            noindex
+                                                        </label>
+                                                    </div>
+                                                </label>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label class="col-sm-12">Méta Robots follow</label>
+                                            <div class="radio-list col-sm-12">
+                                                <label class="radio-inline">
+                                                    <div class="radio radio-info">
+                                                        <input type="radio" name="metaFollow" id="follow" value="follow">
+                                                        <label for="follow">
+                                                            follow
+                                                        </label>
+                                                    </div>
+                                                </label>
+                                                <label class="radio-inline">
+                                                    <div class="radio radio-info">
+                                                        <input type="radio" name="metaFollow" id="nofollow" value="nofollow" checked="">
+                                                        <label for="nofollow">
+                                                            nofollow
+                                                        </label>
+                                                    </div>
+                                                </label>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-horizontal">
+                                <button type="submit" class="btn btn-info">Modifier</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
+
+{% block javascripts %}
+
+    {{ parent() }}
+
+    {{ encore_entry_script_tags('dashboard') }}
+    {{ encore_entry_script_tags('header_admin') }}
+{% endblock %}
